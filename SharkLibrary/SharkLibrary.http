@@ -1,0 +1,6 @@
+@SharkLibrary_HostAddress = http://localhost:5091
+
+GET {{SharkLibrary_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
