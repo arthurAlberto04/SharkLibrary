@@ -1,6 +1,5 @@
-﻿namespace SharkLibrary.Data.Dtos
+﻿namespace SharkLibrary.Data.Dtos;
+public class ReadGeneroDto
 {
-    public class ReadGeneroDto
-    {
-    }
+    public string Tipo { get; set; }
 }
