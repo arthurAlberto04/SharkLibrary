@@ -57,7 +57,7 @@ public class AutorController : ControllerBase
     {
         var autor = _ctx.Autores.FirstOrDefault(autor => autor.Id == id);
         if (autor == null) return NotFound();
-        _ctx.Remove(autor);
+        _ctx.Autores.Remove(autor);
         _ctx.SaveChanges();
         return NoContent();
     }

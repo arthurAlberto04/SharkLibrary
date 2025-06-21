@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\linda\\Desktop\\SharkLibrary\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|c:\\users\\linda\\desktop\\sharklibrary\\sharklibrary\\controllers\\editoracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|solutionrelative:sharklibrary\\controllers\\editoracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|c:\\users\\linda\\desktop\\sharklibrary\\sharklibrary\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|solutionrelative:sharklibrary\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|c:\\users\\linda\\desktop\\sharklibrary\\sharklibrary\\data\\dtos\\createeditoradto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|solutionrelative:sharklibrary\\data\\dtos\\createeditoradto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|c:\\users\\linda\\desktop\\sharklibrary\\sharklibrary\\models\\editora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|solutionrelative:sharklibrary\\models\\editora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AutorController.cs",
+              "DocumentMoniker": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Controllers\\AutorController.cs",
+              "RelativeDocumentMoniker": "SharkLibrary\\Controllers\\AutorController.cs",
+              "ToolTip": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Controllers\\AutorController.cs",
+              "RelativeToolTip": "SharkLibrary\\Controllers\\AutorController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAA9wDsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T20:25:36.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Editora.cs",
+              "DocumentMoniker": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Models\\Editora.cs",
+              "RelativeDocumentMoniker": "SharkLibrary\\Models\\Editora.cs",
+              "ToolTip": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Models\\Editora.cs",
+              "RelativeToolTip": "SharkLibrary\\Models\\Editora.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T20:24:27.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateEditoraDto.cs",
+              "DocumentMoniker": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Data\\Dtos\\CreateEditoraDto.cs",
+              "RelativeDocumentMoniker": "SharkLibrary\\Data\\Dtos\\CreateEditoraDto.cs",
+              "ToolTip": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Data\\Dtos\\CreateEditoraDto.cs",
+              "RelativeToolTip": "SharkLibrary\\Data\\Dtos\\CreateEditoraDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T20:24:17.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditoraController.cs",
+              "DocumentMoniker": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Controllers\\EditoraController.cs",
+              "RelativeDocumentMoniker": "SharkLibrary\\Controllers\\EditoraController.cs",
+              "ToolTip": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Controllers\\EditoraController.cs",
+              "RelativeToolTip": "SharkLibrary\\Controllers\\EditoraController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowD4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T20:16:39.498Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

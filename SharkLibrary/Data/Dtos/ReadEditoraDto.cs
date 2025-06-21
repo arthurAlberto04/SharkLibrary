@@ -1,6 +1,5 @@
-﻿namespace SharkLibrary.Data.Dtos
+﻿namespace SharkLibrary.Data.Dtos;
+public class ReadEditoraDto
 {
-    public class ReadEditoraDto
-    {
-    }
+    public string Nome { get; set; }
 }
