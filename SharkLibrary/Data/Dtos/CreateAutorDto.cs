@@ -1,6 +1,8 @@
-﻿namespace SharkLibrary.Data.Dtos
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SharkLibrary.Data.Dtos;
+public class CreateAutorDto
 {
-    public class CreateAutorDto
-    {
-    }
+    [Required]
+    public string Nome { get; set; }
 }

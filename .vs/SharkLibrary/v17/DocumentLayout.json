@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\linda\\Desktop\\SharkLibrary\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|c:\\users\\linda\\desktop\\sharklibrary\\sharklibrary\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|solutionrelative:sharklibrary\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LibraryContext.cs",
-              "DocumentMoniker": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Data\\LibraryContext.cs",
-              "RelativeDocumentMoniker": "SharkLibrary\\Data\\LibraryContext.cs",
-              "ToolTip": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Data\\LibraryContext.cs",
-              "RelativeToolTip": "SharkLibrary\\Data\\LibraryContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T19:06:03.811Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

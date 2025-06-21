@@ -1,6 +1,5 @@
-﻿namespace SharkLibrary.Data.Dtos
+﻿namespace SharkLibrary.Data.Dtos;
+public class UpdateAutorDto
 {
-    public class UpdateAutorDto
-    {
-    }
+    public string Nome { get; set; }
 }

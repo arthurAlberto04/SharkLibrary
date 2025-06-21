@@ -5,7 +5,7 @@ using SharkLibrary.Data.Dtos;
 namespace SharkLibrary.Controllers;
 
 [ApiController]
-[Route("Controller")]
+[Route("Livro")]
 public class LivroController : Controller
 {
     [HttpPost]
