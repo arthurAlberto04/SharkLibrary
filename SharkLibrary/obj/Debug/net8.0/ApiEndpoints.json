@@ -313,78 +313,43 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "SharkLibrary.Controllers.LivroController",
-    "Method": "RecuperaLivros",
+    "Method": "ReadLivros",
     "RelativePath": "Livro",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "SharkLibrary.Controllers.LivroController",
-    "Method": "UpdateLivroFull",
-    "RelativePath": "Livro",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "SharkLibrary.Data.Dtos.CreateLivroDto",
-        "IsRequired": true
+        "Name": "skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SharkLibrary.Data.Dtos.ReadLivroDto, SharkLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]
   },
   {
     "ContainingType": "SharkLibrary.Controllers.LivroController",
-    "Method": "UptadeLivro",
-    "RelativePath": "Livro",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "SharkLibrary.Data.Dtos.UpdateLivroDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "SharkLibrary.Controllers.LivroController",
-    "Method": "RecuperaLivrosId",
-    "RelativePath": "Livro/id",
+    "Method": "ReadLivroById",
+    "RelativePath": "Livro/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -392,15 +357,67 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
-    "ReturnTypes": [
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SharkLibrary.Controllers.LivroController",
+    "Method": "UpdateLivroFull",
+    "RelativePath": "Livro/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SharkLibrary.Data.Dtos.UpdateLivroDto",
+        "IsRequired": true
       }
-    ]
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SharkLibrary.Controllers.LivroController",
+    "Method": "UpdateLivro",
+    "RelativePath": "Livro/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Microsoft.AspNetCore.JsonPatch.JsonPatchDocument\u00601[[SharkLibrary.Data.Dtos.UpdateLivroDto, SharkLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SharkLibrary.Controllers.LivroController",
+    "Method": "DeleteLivro",
+    "RelativePath": "Livro/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

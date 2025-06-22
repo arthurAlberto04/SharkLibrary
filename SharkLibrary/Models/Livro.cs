@@ -8,16 +8,16 @@ public class Livro
     [Required]
     public string Nome { get; set; }
     [Required]
-    public DateTime DataDeLançamento { get; set; }
+    public DateOnly DataDeLançamento { get; set; }
     [Required]
     public int AutorId { get; set; }
-    public Autor Autor { get; set; }
+    public  virtual Autor Autor { get; set; }
     [Required]
     public int GeneroId { get; set; }
-    public Genero Genero { get; set; }
+    public virtual Genero Genero { get; set; }
     [Required]
     public int EditoraId { get; set; }
-    public Editora Editora { get; set; }
+    public virtual Editora Editora { get; set; }
     [Required]
     public bool Disponivel { get; set; }
 }

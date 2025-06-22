@@ -9,7 +9,10 @@ public class LibraryContext : IdentityDbContext
     {
 
     }
-
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseLazyLoadingProxies();
+    }
     public DbSet<Autor> Autores { get; set; }
     public DbSet<Editora> Editoras { get; set; }
     public DbSet<Genero> Generos { get; set; }

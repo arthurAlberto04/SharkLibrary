@@ -7,7 +7,7 @@ public class CreateLivroDto
     [Required]
     public string Nome { get; set; }
     [Required]
-    public DateTime DataDeLançamento { get; set; }
+    public DateOnly DataDeLançamento { get; set; }
     [Required]
     public int AutorId { get; set; }
     [Required]
