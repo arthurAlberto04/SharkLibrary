@@ -2,63 +2,48 @@
 using SharkLibrary.Data;
 using SharkLibrary.Data.Dtos;
 using SharkLibrary.Models;
+using SharkLibrary.Service;
 
 namespace SharkLibrary.Controllers;
 
 [ApiController]
-[Route("Autor")]
+[Route("[Controller]")]
 public class AutorController : ControllerBase
 {
-    private LibraryContext _ctx;
-    public AutorController(LibraryContext ctx)
+    private AutorService _autorService;
+    public AutorController(AutorService autorService)
     {
-        _ctx = ctx;
+        _autorService = autorService;
     }
 
     [HttpPost]
     public IActionResult CreateAutor([FromBody]CreateAutorDto dto)
     {
-        Autor autor = new Autor { Nome = dto.Nome };
-        _ctx.Autores.Add(autor);
-        _ctx.SaveChanges();
+        var autor = _autorService.CadastroAutor(dto);
         return CreatedAtAction(nameof(ReadAutorById), new { id = autor.Id }, autor); //"Documenta" o caminho que voce ira encontrar o objeto criado
     }
     [HttpGet]
     public IEnumerable<ReadAutorDto> RedAutor([FromQuery] int skip = 0, [FromQuery] int take = 30)
     {
-         var autores = _ctx.Autores.Skip(skip).Take(take).ToList();
-        List<ReadAutorDto> autoresDto = new List<ReadAutorDto>();
-        foreach( var autor in autores)
-        {
-            ReadAutorDto autorDto = new ReadAutorDto { Nome = autor.Nome };
-            autoresDto.Add(autorDto);
-        }
-        return autoresDto;
+        var autores = _autorService.GetAutores(skip, take);
+        return autores;
     }
     [HttpGet("{id}")]
     public IActionResult ReadAutorById(int id)
     {
-        var autor = _ctx.Autores.FirstOrDefault(autor => autor.Id == id);
-        if (autor == null) return NotFound();
-        ReadAutorDto dto = new ReadAutorDto { Nome = autor.Nome };
-        return Ok(dto);
+        var autor = _autorService.GetAutorById(id);
+        return Ok(autor);
     }
     [HttpPut("{id}")]
     public IActionResult UpdateAutor(int id, [FromBody] UpdateAutorDto dto)
     {
-        var autor = _ctx.Autores.FirstOrDefault(autor => autor.Id == id);
-        if (autor == null) return NotFound();
-        autor.Nome = dto.Nome;
-        _ctx.SaveChanges();
+        _autorService.AtualizaAutor(id, dto);
         return NoContent();
     }
     [HttpDelete("{id}")]
     public IActionResult DeleteAutor(int id)
     {
-        var autor = _ctx.Autores.FirstOrDefault(autor => autor.Id == id);
-        if (autor == null) return NotFound();
-        _ctx.Autores.Remove(autor);
-        _ctx.SaveChanges();
+        _autorService.DeletaAutor(id);
         return NoContent();
     }
 }

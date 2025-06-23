@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharkLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee731a78ff7b053060482a572f51ece6ac9bfb91")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36cb49e5335d40874a08f8be6781e7da0dfaf483")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharkLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharkLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

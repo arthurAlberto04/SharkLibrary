@@ -43,7 +43,7 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<TokenService>();
-
+builder.Services.AddScoped<AutorService>();
 
 var app = builder.Build();
 
