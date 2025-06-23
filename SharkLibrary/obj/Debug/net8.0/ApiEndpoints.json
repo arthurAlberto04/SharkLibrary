@@ -419,5 +419,37 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SharkLibrary.Controllers.UsuarioController",
+    "Method": "Cadastro",
+    "RelativePath": "Usuario/Cadastro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SharkLibrary.Data.Dtos.CreateUsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SharkLibrary.Controllers.UsuarioController",
+    "Method": "Login",
+    "RelativePath": "Usuario/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SharkLibrary.Data.Dtos.LoginUsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

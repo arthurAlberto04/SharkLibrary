@@ -178,3 +178,4 @@ C:\Users\linda\Desktop\SharkLibrary\SharkLibrary\obj\Debug\net8.0\SharkLibrary.p
 C:\Users\linda\Desktop\SharkLibrary\SharkLibrary\obj\Debug\net8.0\SharkLibrary.genruntimeconfig.cache
 C:\Users\linda\Desktop\SharkLibrary\SharkLibrary\obj\Debug\net8.0\ref\SharkLibrary.dll
 C:\Users\linda\Desktop\SharkLibrary\SharkLibrary\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\linda\Desktop\SharkLibrary\SharkLibrary\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

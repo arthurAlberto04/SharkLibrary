@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("58338f11-b5b4-4a5e-b66d-92e3e5812794")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharkLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0192728f92694d50298b8819f5c774862f3707c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee731a78ff7b053060482a572f51ece6ac9bfb91")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharkLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharkLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
