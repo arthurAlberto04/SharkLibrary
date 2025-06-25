@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\linda\\Desktop\\SharkLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|c:\\users\\linda\\desktop\\sharklibrary\\sharklibrary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|solutionrelative:sharklibrary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|c:\\users\\linda\\desktop\\sharklibrary\\sharklibrary\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|solutionrelative:sharklibrary\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|c:\\users\\linda\\desktop\\sharklibrary\\sharklibrary\\service\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6BD27A0-3D15-41A3-BB29-361FE1A4FC75}|SharkLibrary\\SharkLibrary.csproj|solutionrelative:sharklibrary\\service\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Program.cs",
-              "RelativeDocumentMoniker": "SharkLibrary\\Program.cs",
-              "ToolTip": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Program.cs",
-              "RelativeToolTip": "SharkLibrary\\Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAC0AAAArAAAA",
+              "Title": "LivroService.cs",
+              "DocumentMoniker": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Service\\LivroService.cs",
+              "RelativeDocumentMoniker": "SharkLibrary\\Service\\LivroService.cs",
+              "ToolTip": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Service\\LivroService.cs",
+              "RelativeToolTip": "SharkLibrary\\Service\\LivroService.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAmwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T14:23:33.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AutorController.cs",
-              "DocumentMoniker": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Controllers\\AutorController.cs",
-              "RelativeDocumentMoniker": "SharkLibrary\\Controllers\\AutorController.cs",
-              "ToolTip": "C:\\Users\\linda\\Desktop\\SharkLibrary\\SharkLibrary\\Controllers\\AutorController.cs",
-              "RelativeToolTip": "SharkLibrary\\Controllers\\AutorController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAoAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T14:11:12.099Z",
+              "WhenOpened": "2025-06-25T22:36:16.155Z",
               "EditorCaption": ""
             }
           ]

@@ -3,66 +3,49 @@ using Microsoft.EntityFrameworkCore;
 using SharkLibrary.Data;
 using SharkLibrary.Data.Dtos;
 using SharkLibrary.Models;
+using SharkLibrary.Service;
 
 namespace SharkLibrary.Controllers;
 
 [ApiController]
-[Route("Editora")]
+[Route("[Controller]")]
 public class EditoraController : ControllerBase
 {
-    private LibraryContext _ctx;
+    private EditoraService _editoraService;
 
-    public EditoraController(LibraryContext ctx)
+    public EditoraController(EditoraService editoraService)
     {
-        _ctx = ctx;
+        _editoraService = editoraService;
     }
 
     [HttpPost]
     public IActionResult CreateEditora([FromBody] CreateEditoraDto dto)
     {
-        Editora editora = new Editora { Nome = dto.Nome };
-        _ctx.Editoras.Add(editora);
-        _ctx.SaveChanges();
+        var editora = _editoraService.CriaEditora(dto);
         return CreatedAtAction(nameof(ReadEditoraById), new { id = editora.Id }, editora);
     }
     [HttpGet("{id}")]
     public IActionResult ReadEditoraById(int id)
     {
-        var editora = _ctx.Editoras.FirstOrDefault(editora => editora.Id == id);
-        if (editora == null) return NotFound();
-        ReadEditoraDto editoraDto = new ReadEditoraDto { Nome = editora.Nome };
-        return Ok(editoraDto);
+        var editora = _editoraService.GetEditoraById(id);
+        return Ok(editora);
     }
     [HttpGet]
     public IEnumerable<ReadEditoraDto> ReadEditora([FromQuery] int skip = 0, [FromQuery] int take = 30)
     {
-        var editoras = _ctx.Editoras.Skip(skip).Take(take).ToList();
-        List<ReadEditoraDto> editorasDto = new List<ReadEditoraDto>();
-        foreach (var editora in editoras)
-        {
-            ReadEditoraDto editor = new ReadEditoraDto { Nome = editora.Nome };
-            editorasDto.Add(editor);
-        }
-        return editorasDto;
+        var editoras = _editoraService.GetEditora(skip, take);
+        return editoras;
     }
     [HttpPut("{id}")]
     public IActionResult UpdateEditora(int id, [FromBody] UpdateEditoraDto dto)
     {
-        var editora = _ctx.Editoras.FirstOrDefault(editora => editora.Id == id);
-        if (editora == null) return NotFound();
-        editora.Nome = dto.Nome;
-        _ctx.SaveChanges();
+        _editoraService.AtualizaEditora(id, dto);
         return NoContent();
     }
     [HttpDelete("{id}")]
     public IActionResult DeleteEditora(int id)
     {
-        var editora = _ctx.Editoras.FirstOrDefault(editora => editora.Id == id);
-        if (editora == null) return NotFound();
-        _ctx.Editoras.Remove(editora);
-        _ctx.SaveChanges();
+        _editoraService.DeletaEditora(id);
         return NoContent();
     }
-
-
 }

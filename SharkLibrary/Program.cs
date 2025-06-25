@@ -44,6 +44,10 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<AutorService>();
+builder.Services.AddScoped<EditoraService>();
+builder.Services.AddScoped<GeneroService>();
+builder.Services.AddScoped<LivroService>();
+
 
 var app = builder.Build();
 

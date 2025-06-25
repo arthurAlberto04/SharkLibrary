@@ -2,65 +2,50 @@
 using SharkLibrary.Data;
 using SharkLibrary.Data.Dtos;
 using SharkLibrary.Models;
+using SharkLibrary.Service;
 
 namespace SharkLibrary.Controllers;
 
 [ApiController]
-[Route("Genero")]
+[Route("[Controller]")]
 public class GeneroController : ControllerBase
 {
-    private LibraryContext _ctx;
+    private GeneroService _generoService;
 
-    public GeneroController(LibraryContext ctx)
+    public GeneroController(GeneroService generoService)
     {
-        _ctx = ctx;
+        _generoService = generoService;
     }
 
     [HttpPost]
     public IActionResult CreateGenero([FromBody] CreateGeneroDto dto)
     {
-        Genero genero = new Genero { Tipo = dto.Tipo };
-        _ctx.Generos.Add(genero);
-        _ctx.SaveChanges();
+        var genero = _generoService.CriaGenero(dto);
         return CreatedAtAction(nameof(ReadGeneroById), new { id = genero.Id }, genero);
     }
 
     [HttpGet("{id}")]
     public IActionResult ReadGeneroById(int id)
     {
-        var genero = _ctx.Generos.FirstOrDefault(genero => genero.Id == id);
-        if (genero == null) return NotFound();
-        ReadGeneroDto generoDto = new ReadGeneroDto { Tipo = genero.Tipo };
-        return Ok(generoDto);
+        var genero = _generoService.GetGeneroById(id);
+        return Ok(genero);
     }
     [HttpGet]
     public IEnumerable<ReadGeneroDto> ReadGenero([FromQuery] int skip = 0, [FromQuery] int take = 30)
     {
-        var generos = _ctx.Generos.Skip(skip).Take(take).ToList();
-        List<ReadGeneroDto> generosDto = new List<ReadGeneroDto>();
-        foreach (var genero in generos)
-        {
-            ReadGeneroDto generoDto = new ReadGeneroDto { Tipo = genero.Tipo };
-            generosDto.Add(generoDto);
-        }
-        return generosDto;
+        var generos = _generoService.GetGenero(skip, take);
+        return generos;
     }
     [HttpPut("{id}")]
     public IActionResult UpdateGenero(int id, [FromBody] UpdateGeneroDto dto)
     {
-        var genero = _ctx.Generos.FirstOrDefault(genero=>genero.Id == id);
-        if (genero == null) return NotFound();
-        genero.Tipo = dto.Tipo;
-        _ctx.SaveChanges();
+        _generoService.AtualizaGenero(id, dto);
         return NoContent();
     }
     [HttpDelete("{id}")]
     public IActionResult DeleteGenero(int id)
     {
-        var genero = _ctx.Generos.FirstOrDefault(genero => genero.Id == id);
-        if (genero == null) return NotFound();
-        _ctx.Generos.Remove(genero);
-        _ctx.SaveChanges();
+        _generoService.DeletaGenero(id);
         return NoContent();
     }
 }
